@@ -1,0 +1,59 @@
+.animation-text{
+    font-size: 26px;
+    font-weight: 600;
+    min-width: 280px;
+}
+
+.animation-text span{
+    position: relative;
+}
+
+.animation-text span::before{
+    content: "buying cat";
+    color: rgb(255,220,38);
+    animation: words 20s infinite;
+}
+
+.animation-text span::after{
+    content: "";
+    position: absolute;
+    width: calc(100% + 8px);
+    height: 100%;
+    background-color: white;
+    border-left: 2px solid rgb(255,220,38);
+    right: -8px;
+    animation: cursor .8s infinite, typing 20s steps(14) infinite;
+}
+
+@keyframes cursor {
+    to{
+        border-left: 2px solid rgb(39, 36, 36);
+    }
+}
+
+@keyframes words {
+    0%,20%{
+        content: "buying a cat";
+    }
+    21%,40%{
+        content: "selling a cat";
+    }
+    41%,60%{
+        content: "adopting a cat";
+    }
+    61%,80%{
+        content: "looking for a cat";
+    }
+    81%,100%{
+        content: "very welcome.";
+    }
+}
+
+@keyframes typing{
+    10%,15%,30%,35%,50%,55%,70%,90%,95%{
+        width: 0;
+    }
+    5%,20%,40%,45%,60%,65%,80%,85%{
+        width: calc(100% + 8px);
+    }
+}

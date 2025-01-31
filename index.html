@@ -1,79 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MeowMagic</title>
     <!-- daisyUI and tailwindCSS CDN -->
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- font awesome CDN -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
-<body>
-   <!-- navbar -->
-    <nav class="">
-        <div class="navbar bg-[rgb(252,242,235)] px-8 lg:px-14">
-            <div class=" navbar-start ">
-              <div class="dropdown">
-                
-              </div>
-              <button class=" flex items-center space-x-3 text-xl"><img src="c1-assets/logo-header.png" alt=""> <span class="font-semibold text-xl">Browse4Pets</span></button>
-            </div>
-            <div class="navbar-center hidden lg:flex">
-              <ul class="menu menu-horizontal px-1">
-                <li class="hover:bg-[rgb(255,220,38)] rounded-lg font-semibold"><a>Find a pet</a></li>
-                <li class="hover:bg-[rgb(255,220,38)] rounded-lg font-semibold"><a>Breeds</a></li>
-                <li class="hover:bg-[rgb(255,220,38)] rounded-lg font-semibold"><a>Contact us</a></li>
-              </ul>
-            </div>
-            <div class="navbar-end ">
-             <div class="space-x-1 lg:space-y-2 hidden lg:block justify-center items-center">
-                <a href=""><i class="fa-regular fa-bell lg:text-xl"></i></a>
-                <a href=""><i class="fa-solid fa-magnifying-glass lg:text-xl"></i></a>
-                
-              <a class="btn border-2 border-[rgb(255,220,38)] hover:bg-[rgb(255,220,38)] h-2 md:w-20 lg:w-28" href="">Login</a>
-              <a class="btn bg-[rgb(255,220,38)] md:w-20 lg:w-28" href="">Register</a>
-             </div>
-             <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="h-5 w-5"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor">
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M4 6h16M4 12h8m-8 6h16" />
-                </svg>
-              </div>
-            </div>
-          </div>
-    </nav>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
-    <!-- header section -->
-     <header class="w-11/12 my-10 mx-auto">
-        <div
-        class=" h-[500px]  w-full bg-contain bg-center bg-no-repeat "
-        style="background-image: url(c1-assets/cat-big.png);">
-        <!-- <div class="hero-overlay bg-opacity-60"></div> -->
-        <div class="">
-          <div class="max-w-md space-x-2">
-            <h1 class="mb-5 text-5xl font-semibold li lg:leading-tight">Pamper Your Pet, Because They Deserve the Bes</h1>
-            <p class="mb-5">
-                Discover a world of treats, toys, and essentials handpicked for your furry friends. Shop now and make tails wag with joy!
-            </p>
-            <a class="btn bg-[rgb(255,220,38)] md:w-20 lg:w-28" href="">Register</a>
+    <!-- styles css -->
+    <link rel="stylesheet" href="styles/style.css">
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav class="">
+      <div class="navbar bg-[rgb(252,242,235)] px-8 lg:px-14">
+        <div class="navbar-start">
+          <div class="dropdown"></div>
+          <button class="flex items-center space-x-3 text-xl">
+            <img src="c1-assets/logo-header.png" alt="" />
+            <span class="font-semibold text-xl">Browse4Pets</span>
+          </button>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1">
+            <li class="hover:bg-[rgb(255,220,38)] rounded-lg font-semibold">
+              <a>Find a pet</a>
+            </li>
+            <li class="hover:bg-[rgb(255,220,38)] rounded-lg font-semibold">
+              <a>Breeds</a>
+            </li>
+            <li class="hover:bg-[rgb(255,220,38)] rounded-lg font-semibold">
+              <a>Contact us</a>
+            </li>
+          </ul>
+        </div>
+        <div class="navbar-end">
+          <div
+            class="space-x-1 lg:space-y-2 hidden lg:block justify-center items-center"
+          >
+            <a href=""><i class="fa-regular fa-bell lg:text-xl"></i></a>
+            <a href=""
+              ><i class="fa-solid fa-magnifying-glass lg:text-xl"></i
+            ></a>
+
+            <a
+              class="btn border-2 border-[rgb(255,220,38)] hover:bg-[rgb(255,220,38)] h-2 md:w-20 lg:w-28"
+              href=""
+              >Login</a
+            >
+            <a class="btn bg-[rgb(255,220,38)] md:w-20 lg:w-28" href=""
+              >Register</a
+            >
+          </div>
+          <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h8m-8 6h16"
+              />
+            </svg>
           </div>
         </div>
       </div>
-     </header>
-    <!-- main section -->
-     <main></main>
+    </nav>
 
-     <!-- footer section -->
-      <footer></footer>
-</body>
+    <!-- header section -->
+    <header class="w-11/12 my-10 mx-auto">
+      <div
+        class="h-[400px] md:h-[500px]  w-full bg-contain bg-center bg-no-repeat"
+        style="background-image: url(c1-assets/cat-big.png)"
+      >
+        <!-- <div class="hero-overlay bg-opacity-60"></div> -->
+        <div class="">
+          <div class="animation-text">
+           You are <span></span>
+          </div>
+          <div class="w-[330px] md:w-[570px] space-x-1 md:space-x-2">
+            <h1 class="md:mb-5 text-2xl md:text-5xl font-semibold li lg:leading-tight">
+              Pamper Your Pet, Because They Deserve the Bes
+            </h1>
+            <p class="md:mb-5">
+              Discover a world of treats, toys, and essentials handpicked for
+              your furry friends. Shop now and make tails wag with joy!
+            </p>
+            <a class="btn bg-[rgb(255,220,38)] md:w-20 lg:w-28" href=""
+              >Register</a
+            >
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- main section -->
+    <main></main>
+
+
+
+   
+
+
+    <!-- footer section -->
+    <footer></footer>
+  </body>
 </html>
