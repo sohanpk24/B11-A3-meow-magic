@@ -33,19 +33,19 @@
 
 @keyframes words {
     0%,20%{
-        content: "buying a cat";
+        content: "Buying a Cat";
     }
     21%,40%{
-        content: "selling a cat";
+        content: "Buying a Dog";
     }
     41%,60%{
-        content: "adopting a cat";
+        content: "Buying a Bird";
     }
     61%,80%{
-        content: "looking for a cat";
+        content: "Buying for a Rabbit";
     }
     81%,100%{
-        content: "very welcome.";
+        content: "Very Welcome.";
     }
 }
 
