@@ -116,10 +116,11 @@
         </div>
       </div>
     </header>
+
     <!-- main section -->
     <main class=" space-y-8 font-lato ">
       <!-- category section -->
-       <section class="w-11/12 mb-20 mx-auto">
+       <section class="w-11/12 pt-4 md:pt-6 mb-20 mx-auto">
         <h1 class="text-2xl font-bold mb-5 md:text-4xl">Browse By Categories</h1>
         <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-3">
 
@@ -368,7 +369,7 @@
 
 
          <!-- customer review section -->
-       <section class="w-11/12 pt-20 mx-auto">
+       <section class="w-11/12 pt-8 md:pt-20 mx-auto">
         <h1 class="text-2xl font-bold mb-5 md:text-4xl">Customers Review</h1>
         <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-3">
 
@@ -431,6 +432,63 @@
     </main>
 
     <!-- footer section -->
-    <footer></footer>
+    <footer class="relative">
+      <!-- footer news section -->
+      <div class="hero mt-20 absolute top-[-500px] left-[25px] lg:top-[-275px] lg:left-[50px] justify-between  rounded-lg bg-[rgb(255,249,244)] w-11/12 mx-auto">
+        <div class="hero-content text-center w-[80%] md:text-start mx-auto lg:w-[1218px] lg:justify-between flex-col lg:px-16 lg:flex-row">
+        
+          
+          <img
+          src="c1-assets/cute-pet-small.png"
+          class="max-w-sm rounded-lg" />
+        <div class="md:w-3/5">
+          <h1 class="text-3xl font-bold">Get Pawsome News!</h1>
+          <p class="py-4">
+            Exclusive training tips, ticks, product deals and more.
+          </p>
+          <input class=" w-11/12 md:w-8/12 rounded-md p-3 mb-4 bg-[rgb(255,255,255)]" type="text" placeholder="Enter email...."><br>
+          <button class="btn bg-[rgb(255,220,38)] md:w-20 lg:w-28">Subscribe</button>
+        </div>
+        </div>
+      </div>
+
+      <footer class="footer mt-[500px] lg:mt-[250px] bg-[rgba(255,220,38,0.5)] text-base-content pt-56 pb-20">
+        <div class="w-11/12 space-y-4 justify-between mx-auto grid md:grid-cols-3">
+          <nav class=" ">
+            <div class="flex gap-3 items-center">
+              <img src="c1-assets/logo-footer.png" alt="">
+            <h6 class=" text-black text-2xl">Browse Pets</h6>
+            </div>
+
+            <p class="md:w-8/12">Discover a world of treats, toys, and essentials handpicked for your furry friends</p>
+            
+          </nav>
+          <nav class="grid space-y-2 md:w-64 md:justify-end">
+            <a class="link link-hover">Find a pet</a>
+            <a class="link link-hover">Breeds</a>
+            <a class="link link-hover">Contact us</a>
+          </nav>
+          <nav class="grid md:justify-end md:w-11/12 md:mt-12">
+            <h6 class="footer-title">Follow Us</h6>
+            <div class="grid grid-flow-col gap-4">
+              <a>
+                <i class="fa-brands fa-facebook"></i>
+              </a>
+              <a>
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+              <a>
+                <i class="fa-brands fa-linkedin"></i>
+              </a>
+              <a>
+                <i class="fa-brands fa-youtube"></i>
+              </a>
+            </div>
+          </nav>
+        </div>
+      </footer>
+
+
+    </footer>
   </body>
 </html>
